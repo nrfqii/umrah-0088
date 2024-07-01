@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UmrahKu</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <style>
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f8f8f8;
+        padding: 10px 20px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: black;
+        margin: 0 10px;
+        padding: 8px 15px;
+        border-radius: 4px;
+    }
+
+    .navbar a:hover {
+        background-color: #e2e2e2;
+    }
+
+    .navbar a:active {
+        background-color: #cccccc;
+    }
+
+    .navbar .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .navbar .menu-toggle {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .navbar .menu-toggle span {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 4px 0;
+    }
+    
+    @media (max-width: 768px) {
+        .navbar div {
+            display: none;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .navbar .menu-toggle {
+            display: flex;
+        }
+
+        .navbar .menu-toggle.active + div {
+            display: flex;
+        }
+
+        .navbar a {
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        
+
+    }
+    body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .footer {
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .footer-column {
+            max-width: 300px;
+            margin: 20px;
+        }
+        .footer-column h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .footer-column p, .footer-column a {
+            margin: 5px 0;
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer-column a:hover {
+            color: #ffa500;
+        }
+        .footer img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+        .copyright {
+            text-align: center;
+            padding: 10px;
+            background-color: #111;
+        } 
+        </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navbar" >
+        <div class="logo"><i class="fa-solid fa-kaaba fa-2x"></i><span class="blink">UmrohKu</span></div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div>
+            <a href="home.php">Beranda</a>
+            <a href="about.html">About</a>
+            <a href="visa.html">Visa Umroh</a>
+            <a href="hub.html">Hubungi Kami</a>
+            <a href="order.php">Order</a>
+        </div>
+    </div>
+    <div class="bg" id="bg"></div>
+ <div class="bg" id="bg"></div>
+    <h1 style="margin-left: 100px;">Tentang Kami</h1>
+    <div class="container">
+    <p style="padding: 5px;">PT. Rifqi Jaya Tur adalah perusahaan yang bergerak di bidang travel umroh dan haji dengan pengalaman yang telah terbukti dan terpercaya. Kami memiliki tim yang berdedikasi dan berpengalaman dalam memberikan layanan yang terbaik bagi para jamaah yang ingin melakukan ibadah umroh dan haji.</p>
+    <p style="padding: 5px;">Visi kami adalah menjadi penyedia layanan travel umroh dan haji yang terbaik dengan memprioritaskan kepuasan dan kenyamanan para jamaah. Misi kami adalah memberikan pelayanan yang profesional, berkualitas, dan terpercaya dengan harga yang kompetitif.</p>
+    <p style="padding: 5px;">Kami menyadari bahwa perjalanan umroh dan haji adalah momen penting bagi para jamaah, oleh karena itu kami selalu berusaha untuk memberikan pengalaman yang tak terlupakan bagi setiap jamaah yang menggunakan jasa kami. Dalam setiap perjalanan, kami selalu mengutamakan keamanan, kenyamanan, dan kemudahan bagi para jamaah.</p>
+    <p style="padding: 5px;">
+    Dalam melakukan perjalanan umroh dan haji, kami bekerja sama dengan pihak-pihak terkait seperti maskapai penerbangan, hotel, dan transportasi lokal untuk memastikan layanan yang terbaik bagi para jamaah. Kami juga memiliki tim yang siap membantu para jamaah dalam setiap kebutuhan dan keperluan selama perjalanan.</p>
+    <p style="padding: 5px;">
+    Kami berkomitmen untuk terus meningkatkan kualitas layanan kami dan selalu berupaya memberikan yang terbaik bagi para jamaah. Jika Anda memiliki pertanyaan atau ingin menggunakan jasa kami, jangan ragu untuk menghubungi kami melalui kontak yang tersedia di website ini.</p>
+
+    <h3 style="padding: 5px;">Kenapa Memilih Kami?</h3>
+    <ol>
+        <li>Berpengalaman dan terpercaya dalam menyediakan layanan travel umroh dan haji.</li>
+        <li>Menawarkan layanan yang terbaik dengan harga yang kompetitif.</li>
+        <li>Tim yang berdedikasi dan berpengalaman dalam memberikan layanan yang terbaik bagi para jamaah.</li>
+        <li>Memiliki jaringan kerja sama dengan pihak-pihak terkait seperti maskapai penerbangan, hotel, dan transportasi lokal.</li>
+        <li>Selalu mengutamakan keamanan, kenyamanan, dan kemudahan bagi para jamaah.</li>
+        <li>Memberikan pengalaman yang tak terlupakan bagi setiap jamaah yang menggunakan jasa kami.</li>
+    </ol>
+    <footer style="text-align: center; margin-top: 20px;">
+        <hr style="width: 90%; margin: 20px auto;">
+        <div>
+            <i class="fa-brands fa-instagram fa-2x"></i>
+            <i class="fa-brands fa-whatsapp fa-2x"></i>
+            <i class="fa-brands fa-x-twitter fa-2x"></i>
+            <i class="fa-brands fa-facebook fa-2x"></i>
+            <i class="fa-brands fa-linkedin fa-2x"></i>
+            <i class="fa-solid fa-envelope fa-2x"></i>
+        </div>
+    </footer>
+    </div>
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>PT. Rifqi Jaya Tour</h3>
+            <p>Jl. durian runtuh</p>
+            <p>Nomor Telepon: <a href="tel:+6275122272">+62 123 456 789</a></p>
+            <p>Email: <a href="mailto:info@rifqijayatour.com">umrahku@gmail.com</a></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.1251908947906!2d109.66215607403495!3d-6.875600667272826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7025d80e03b5e9%3A0x3be4e1ed9ecee65c!2sSchool%20of%20Management%20Information%20and%20Computer%20Widya%20Pratama%20Pekalongan!5e0!3m2!1sen!2sid!4v1719566381042!5m2!1sen!2sid" width="300" height="300" style="border:0; margin-top: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="footer-column">
+            <h3>Informasi</h3>
+            <p><a href="#">Metode Pembayaran</a></p>
+            <p><a href="#">Syarat Ketentuan</a></p>
+            <p><a href="#">Kebijakan Privasi</a></p>
+            <p><a href="#">Blog</a></p>
+        </div>
+        <div class="footer-column">
+            <h3>Layanan</h3>
+            <p><a href="#">Layanan Paket Umrah</a></p>
+            <p><a href="#">Layanan Paket Haji</a></p>
+            <p><a href="#">Layanan Paket Wisata</a></p>
+            <p><a href="#">Layanan Paket LA</a></p>
+        </div>
+        <div class="footer-column">
+            <h3>Jam Operasional</h3>
+            <p>Senin - Jumat, 07:00 - 17:00</p>
+            <p>Telepon: <a href="#">+62 123 456 789</a></p>
+            <p>Email: <a href="#">umrahku@gmail.com</a></p>
+            <img src="img/kabah.jpg" >
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p>Copyright &copy; 2023 - rifqijayatour.co.id</p>
+    </div>
+</body>
+</html>
